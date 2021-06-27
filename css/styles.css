@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(235, 207, 150);
+}
+.select{
+    background-color: #cdcecf;
+    border-radius: 10px;
+    padding: 15px;
+}
+.spice{
+    margin: 5px;
+}
+.check{
+    margin: 10px;
+}
+.pic{
+    height: 250px;
+}

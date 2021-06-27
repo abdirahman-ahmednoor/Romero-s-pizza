@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ROMERO PIZZA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbo">
+            <div class="pt-5 text-center">
+                <h1>Romero's Pizza</h1>
+                <p class="leap">Hmmmm, must be the pizza!!!!!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="carlos-inner pt-5">
+                <div class="carlos-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="card">
+                                    <img src="./images/pizza1.jpeg" class="card-img-top pic" alt="image of pizza">
+                                    <div class="card-body">
+                                        <p class="card-text">Crunch and Smooth Pizza</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-none d-md-block">
+                                <div class="card">
+                                    <img src="./images/pizza2.jpeg" class="card-img-top pic" alt="image of pizza">
+                                    <div class="card-body">
+                                        <p class="card-text">Family and Friend Feast</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carlos-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-ig-12">
+                                <div class="card">
+                                    <img src="./images/pizza4.jpeg" class="card-img-top pic" alt="image of pizza">
+                                    <div class="card-body">
+                                        <p  class="card-text">Try us out today</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-ig-12">
+                                <div class="card">
+                                    <img src="./images/pizza6.jpeg" class="card-img-top pic" alt="image of pizza">
+                                    <div class="card-body">
+                                        <p  class="card-text">What we got</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="alsoToHide" class="col-md-4 order-md-2 mb-4 select">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Oder id : <span id="track"></span>  </span>
+              </h4>
+              <div class="list-group mb-3">
+                <div class="col list-group-item d-flex justify-content-between lh-condensed">Your total Amount is <span id="total"></span> </div>
+                <div id="wouldYou">
+                  <div class="col list-group-item d-flex justify-content-between lh-condensed">
+                    <p>Would you like a delivery?</p>   
+                    <br>
+                    <br>
+                  <div class="list-group-item d-flex justify-content-between lh-condensed">
+                    <button type="submit" id="delivery" class="btn btn-success spice">Yes</button>
+                    <br>
+                    <button type="submit" id="nodeli" class="btn btn-danger spice">No</button>
+                  </div>
+                </div>
+                </div>
+                <div id="stayLocation" class="col list-group-item">
+                  <div class="col">
+                    <p>It will require an extra cost of 200 Ksh.</p>
+                  </div>
+                  <label id="stay-text" for="stay">Where do you live?</label>
+                  <br>
+                  <input type="text" name="stay" id="stay">
+                  <input type="button" id="withLoc" class="btn btn-warning check" value="Submit Location">
+                </div>
+              </div> 
+             <div id="final" class="check">
+              <button type="submit" id="confirm" class="btn btn-success">Confirm Order</button>
+              <input type="button" onclick="reset()" value="Cancel Order" id="cansel" class="btn btn-danger">
+             </div>
+              <div id="message" class="col btn-warning">
+                <br>
+                <p> Thank you ! Enjoy our Pizza.</p>
+                <input type="button" class="btn btn-danger check" onclick="reset()" value="X">
+                <p id="delly"></p>
+              </div>
+            </div>
+            <div class="col-md-8 order-md-1">
+              <h4 class="mb-3">Make Your Pizza Selections</h4>
+              <form id="order">
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="size">Select Size</label>
+                    <select class="form-control" id="pizzaSize">
+                        <option value="">Choose...</option>
+                        <option value ="500">Small</option>
+                        <option value ="800">Medium</option>
+                        <option value ="1000">Large</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="crust">Pick Crust Size</label>
+                    <select class="form-control" id="pizzacrust">
+                        <option value="">Choose...</option>
+                      <option value = "150">Cripsy</option>
+                      <option value = "175">Stuffed</option>
+                      <option value = "200">Gluten free</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="toppings">Pick Toppings</label>
+                    <select class="form-control" id="pizzaToppings">
+                        <option value="">Choose...</option>
+                      <option value = "225">Chicken barbeque</option>
+                      <option value = "245">Mushroom</option>
+                      <option value = "265">Hawaiian</option>
+                    </select>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-warning">Click to select your choices</button>
+                <br>
+                <br>
+                <br>
+              </form>
+    
+              <div id="toHide">
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">#Order No</th>
+                      <th scope="col">Pizza Size</th>
+                      <th scope="col">Toppings</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="PizzaDisplay">
+                   
+                  </tbody>
+                </table>
+                <button type="submit" id="target" class="btn btn-warning">Click to view your order details when done selecting.</button>
+              </div>
+            </div>
+        </div>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2021 Romero's Pizza</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="">Privacy</a></li>
+              <li class="list-inline-item"><a href="">Terms</a></li>
+              <li class="list-inline-item"><a href="">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
