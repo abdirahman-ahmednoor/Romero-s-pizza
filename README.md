@@ -26,7 +26,7 @@ The web display styled items, perfectly arranged.
 The form on the web allows the user to click into the calender to select date and the following inputs:
 
 var myVariable = "stores something"; 
-| instead of var my_var = "stores something", or, var MyVar = "stores something" , or,  var my-Var = "stores something"
+instead of var my_var = "stores something", or, var MyVar = "stores something" , or,  var my-Var = "stores something"
 
  ### LIVE SETUP
  View [LIVE](https://abdirahman-ahmednoor.github.io/Romero-s-pizza/)
