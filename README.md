@@ -1,7 +1,7 @@
 #ROMERO'S PIZZA
  
  ## AUTHOR
- ABDRAHMAN NOOR
+ ABDIRAHMAN NOOR
 
  ### PROJECT DESCRIPTION 
  This is a platform for ordering pizza online. The platform allows you to order and enter the location for delivery. After the order is successful, a message will appear, confirming the total amount to be paid and any additional fees.
